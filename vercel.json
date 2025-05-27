@@ -5,7 +5,7 @@
     "methods": ["GET" , "POST" , "PUT" , "DELETE" , "PATCH" , "OPTIONS"],
               "headers":{
                 
-                "Access-Control-Allow-Origin": "http://localhost:8080/"
+                "Access-Control-Allow-Origin": "insurance-portal-frontend.vercel.app"
               }
     }]
 }
