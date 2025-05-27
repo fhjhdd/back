@@ -5,7 +5,7 @@
     "methods": ["GET" , "POST" , "PUT" , "DELETE" , "PATCH" , "OPTIONS"],
               "headers":{
                 
-                "Access-Control-Allow-Origin": "https://www.myteamboost.com"
+                "Access-Control-Allow-Origin": "https://www.myteamboost.com/"
               }
     }]
 }
