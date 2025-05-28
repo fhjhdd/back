@@ -29,7 +29,10 @@ app.use('/api/users', userRoutes);
 app.use('/api/withdrawals', withdrawalRoutes);
 app.use(errorHandler);
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
 .then(() => {
   console.log('MongoDB connected');
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
