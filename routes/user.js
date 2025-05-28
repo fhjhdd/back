@@ -5,7 +5,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const router = express.Router();
 
 
-router.post('/add', authMiddleware, addUser);
+router.post('/add', addUser);
 // router.post('/approve/:id', authMiddleware, approveUser);
 router.get('/', authMiddleware, getUsers);
 router.post('/by-ids', getUsersByIdsHandler);
